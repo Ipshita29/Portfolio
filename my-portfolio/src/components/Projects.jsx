@@ -6,9 +6,9 @@ const projects = [
     description:
       'An AI-powered storytelling platform that generates immersive, personalized stories based on user prompts.',
     tech: ['React', 'Node.js', 'Gemini API'],
-    link: 'https://fable-genie.vercel.app',
+    link: 'https://fablegenie-5.onrender.com/',
     visual: {
-      bg: 'linear-gradient(135deg, #1a1a2e, #16213e, #0f3460)',
+      image: '/FableGenie.png',
       pattern: 'stars',
     },
     featured: true,
@@ -20,23 +20,23 @@ const projects = [
     description:
       'Analyzes expenses, categorizes spending, and detects anomalies using AI.',
     tech: ['React', 'Node.js', 'Gemini API', 'SQLite'],
-    link: '#',
+    link: 'https://where-is-my-money-1.onrender.com/',
     visual: {
-      bg: 'linear-gradient(135deg, #0f2027, #203a43, #2c5364)',
+      image: '/whereismmymoney.png',
       pattern: 'wave',
     },
     featured: true,
   },
   {
     id: 3,
-    category: 'AI · Developer Tool',
-    title: 'CodeAtlas',
+    category: 'Productivity · Tracking',
+    title: 'Application Tracker',
     description:
-      'AI system that analyzes repositories and generates docs, architecture, and insights.',
-    tech: ['React', 'Node.js', 'FastAPI', 'MySQL', 'OpenAI API'],
-    link: '#',
+      'Track job applications with status updates and notes.',
+    tech: ['React', 'JavaScript', 'CSS'],
+    link: 'https://69540af7452e6e05f10ac964--rainbow-lokum-569bc6.netlify.app/',
     visual: {
-      bg: 'linear-gradient(135deg, #141e30, #243b55)',
+      image: '/AppTracker.png',
       pattern: 'grid',
     },
   },
@@ -47,9 +47,9 @@ const projects = [
     description:
       'Suggests roles, calculates ATS score, and visualizes skills.',
     tech: ['Python', 'Flask', 'Pandas', 'Matplotlib'],
-    link: '#',
+    link: 'https://career-profile-analyzer-psi.vercel.app/',
     visual: {
-      bg: 'linear-gradient(135deg, #232526, #414345)',
+      image: '/CareerProfile.png',
       pattern: 'bars',
     },
   },
@@ -60,24 +60,25 @@ const projects = [
     description:
       'Wellness app with AI chatbot, reminders, meditation, and habit tracking.',
     tech: ['React Native', 'Expo', 'AsyncStorage', 'OpenRouter API'],
-    link: '#',
+    link: 'https://youtube.com/shorts/6cGqBKyOalk?feature=share',
     visual: {
-      bg: 'linear-gradient(135deg, #1d2671, #c33764)',
+      image: '/aira.png',
       pattern: 'soft',
     },
   },
   {
     id: 6,
-    category: 'Productivity · Tracking',
-    title: 'Application Tracker',
+    category: 'AI · Developer Tool',
+    title: 'CodeAtlas',
     description:
-      'Track job applications with status updates and notes.',
-    tech: ['React', 'JavaScript', 'CSS'],
-    link: 'https://application-tracker-six.vercel.app',
+      'AI system that analyzes repositories and generates docs, architecture, and insights.',
+    tech: ['React', 'Node.js', 'FastAPI', 'MySQL', 'OpenAI API'],
+    link: '#',
     visual: {
-      bg: 'linear-gradient(135deg, #0a0a0a, #1c1c1c, #2a2a2a)',
+      image: '/comingsoon.png', 
       pattern: 'grid',
     },
+    
   },
 ];
 
@@ -94,7 +95,11 @@ function ProjectCard({ project }) {
     <div className="project-card fade-in">
       <div
         className="project-card-visual"
-        style={{ background: project.visual.bg }}
+        style={{
+            backgroundImage: `url(${project.visual.image})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
       >
         <div className="project-card-visual-inner">
           <PatternOverlay pattern={project.visual.pattern} />
@@ -164,7 +169,7 @@ export default function Projects() {
     <section className="projects" id="projects">
       <div className="projects-header">
         <div>
-          <h2 className="section-heading">Selected Work</h2>
+          <h2 className="section-heading">What I've made till now</h2>
         </div>
 
         <a
