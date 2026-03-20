@@ -2,28 +2,58 @@ export default function Experience() {
   const experiences = [
     {
       number: '01',
-      title: 'UI/UX Design & Branding',
-      company: 'Freelance Projects',
-      period: '2023 — Present',
-      description: 'Designing and delivering end-to-end UI experiences for web applications. From wireframes to polished prototypes, I craft interfaces that balance aesthetics with usability.',
-      tags: ['Figma', 'UX Research', 'Prototyping'],
+      title: 'AI & Tech Intern',
+      company: 'Lenn Chartered & Co.',
+      period: 'Apr 2026 — Oct 2026',
+      description:
+        'Working as an AI & Tech Intern, contributing to real-world business solutions by integrating AI tools and modern web technologies. Focused on building efficient workflows, automation, and user-centric digital solutions.',
+      tags: ['AI Tools', 'Automation', 'Web Tech'],
     },
     {
       number: '02',
-      title: 'Frontend Development',
-      company: 'Academic & Personal Projects',
-      period: '2022 — Present',
-      description: 'Building modern, responsive web applications using React, HTML, and CSS. Focused on clean component architecture and pixel-perfect implementation from design files.',
-      tags: ['React', 'JavaScript', 'CSS'],
+      title: 'Open Source Contributor',
+      company: 'MDN Web Docs, Jenkins.io, Shiki & More',
+      period: '2025 — Present',
+      description:
+        'Actively contributing to open-source projects by improving documentation, fixing issues, and enhancing developer resources. Participated in Hacktoberfest and collaborated with global contributors across multiple repositories.',
+      tags: ['Open Source', 'GitHub', 'Documentation'],
     },
     {
       number: '03',
-      title: 'Student Developer',
-      company: 'Newton School of Technology',
-      period: '2023 — Present',
-      description: 'Actively building full-stack projects and exploring the intersection of design and engineering in academic and collaborative team settings.',
-      tags: ['Full-Stack', 'Collaboration', 'Agile'],
+      title: 'Hackathon Participant',
+      company: 'SIH & 24-Hour College Hackathons',
+      period: '2024 — Present',
+      description:
+        'Participated in multiple hackathons including Smart India Hackathon (SIH) and intense 24-hour college hackathons. Built innovative web-based solutions under pressure, focusing on creativity, teamwork, and rapid prototyping.',
+      tags: ['Hackathons', 'Teamwork', 'Rapid Prototyping'],
     },
+    {
+      number: '04',
+      title: 'FullStack Developer',
+      company: 'Personal & Academic Projects',
+      period: '2023 — Present',
+      description:
+        'Building modern, responsive web applications using React, HTML, and CSS. Focused on clean UI, smooth interactions, and translating design ideas into functional products.',
+      tags: ['React', 'JavaScript', 'CSS'],
+    },
+    {
+      number: '05',
+      title: 'UI/UX Designer',
+      company: 'Personal Work',
+      period: '2023 — Present',
+      description:
+        'Designing intuitive user experiences from wireframes to high-fidelity prototypes. Passionate about blending aesthetics with usability to create meaningful digital experiences.',
+      tags: ['Figma', 'UX Research', 'Prototyping'],
+    },
+    {
+      number: '06',
+      title: 'Event & Decor Team Member',
+      company: 'College Fests & Cultural Events',
+      period: '2023 — Present',
+      description:
+        'Contributed to organizing and executing college fests and events as part of the decor team. Designed creative setups, managed on-ground execution, and collaborated with cross-functional teams to deliver engaging event experiences under tight timelines.',
+      tags: ['Event Management', 'Creativity', 'Teamwork'],
+    }
   ];
 
   return (
@@ -35,14 +65,14 @@ export default function Experience() {
             <span>Experience</span>
           </div>
           <h2 className="section-heading">
-            Craft refined<br />through practice.
+            Built through<br />real-world impact.
           </h2>
         </div>
       </div>
 
       <div className="experience-grid">
         {experiences.map((exp, i) => (
-          <div key={exp.number} className={`exp-card fade-in fade-in-delay-${i + 1}`}>
+          <div key={exp.number} className="exp-card fade-in" style={{ animationDelay: `${i * 0.2}s` }}>
             <div className="exp-number">{exp.number}</div>
             <div>
               <div className="exp-company">{exp.company}</div>
