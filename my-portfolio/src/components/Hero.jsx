@@ -1,53 +1,47 @@
 export default function Hero() {
   return (
-    <section className="hero" id="hero">
-      <div className="hero-left">
-        <div className="hero-eyebrow fade-in">
-          <div className="hero-eyebrow-line"></div>
-          <span>Full-Stack · AI/ML · UI/UX</span>
-        </div>
-
-        <h1 className="hero-title fade-in fade-in-delay-1">
-          Hi, I'm
-          <span>Ipshita</span>
-        </h1>
-
-        <p className="hero-subtitle fade-in fade-in-delay-2">
-          I design experiences that feel effortless — turning ideas into real, usable products where design and code meet.
-        </p>
-
-        <div className="hero-cta fade-in fade-in-delay-3">
-          <a href="#projects" className="btn-primary" onClick={(e) => {
-            e.preventDefault();
-            document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
-          }}>
-            <span>View Work</span>
-          </a>
-          <a href="#contact" className="btn-secondary" onClick={(e) => {
-            e.preventDefault();
-            document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-          }}>
-            <span>Let's Talk</span>
-          </a>
+    <section className="hero-editorial hero-bg" id="hero">
+      <div className="hero-top-decoration">
+        <div className="hero-logo-large">
+          <span className="word-port">PORTFOLIO</span>
         </div>
       </div>
 
-      <div className="hero-right fade-in fade-in-delay-2">
-        <div className="avatar-container">
-          <div className="avatar-ring"></div>
-          <div className="avatar-blob">
-            <img src="/avatar.png" alt="Ipshita — Developer & Designer" />
-          </div>
-          <div className="avatar-badge">
-            <div className="avatar-badge-dot"></div>
-            <span className="avatar-badge-text">Open to Work</span>
+      <div className="hero-middle-section">
+        <div className="hero-badge-col">
+          <div className="hero-id-badge">
+            <div className="badge-lanyard"></div>
+
+            <div className="badge-card">
+              <div className="badge-photo">
+                <img src="/myimg2.png" alt="Ipshita - Badge Photo" />
+              </div>
+
+              <div className="badge-details">
+                <span className="badge-name">IPSHITA PATEL.</span>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div className="hero-scroll-hint">
-        <div className="hero-scroll-line"></div>
-        <span>Scroll to explore</span>
+        <div className="hero-bio-col">
+          <div className="hero-bio-text">
+            <h2>HI, I'm <span>Ipshita</span></h2>
+            <p>
+              I'm an AI/ML Engineer and a FullStack Developer specialized in building products where 
+              logic meets aesthetics. I love tackling complex problems through clean code 
+              and premium design.
+            </p>
+          </div>
+
+          <div className="hero-details-grid">
+            <div className="detail-item">
+              <h3>EDUCATION</h3>
+              <p>B.Tech in CS (AI Specialization)</p>
+              <p className="detail-sub">Newton School of Technology, Pune , India</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

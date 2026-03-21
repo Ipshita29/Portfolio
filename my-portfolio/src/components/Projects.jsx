@@ -163,7 +163,6 @@ function ProjectCard({ project }) {
 }
 
 export default function Projects() {
-  const featured = projects.filter((p) => p.featured);
 
   return (
     <section className="projects" id="projects">
@@ -171,15 +170,6 @@ export default function Projects() {
         <div>
           <h2 className="section-heading">What I've made till now</h2>
         </div>
-
-        <a
-          href="https://github.com/Ipshita29"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn-secondary"
-        >
-          All on GitHub ↗
-        </a>
       </div>
 
       {/* All Projects */}
