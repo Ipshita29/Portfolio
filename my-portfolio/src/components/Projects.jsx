@@ -41,20 +41,7 @@ const projects = [
     },
   },
   {
-    id: 4,
-    category: 'AI · Career',
-    title: 'Career Profile Analyzer',
-    description:
-      'Suggests roles, calculates ATS score, and visualizes skills.',
-    tech: ['Python', 'Flask', 'Pandas', 'Matplotlib'],
-    link: 'https://career-profile-analyzer-psi.vercel.app/',
-    visual: {
-      image: '/CareerProfile.png',
-      pattern: 'bars',
-    },
-  },
-  {
-    id: 5,
+    id: 10,
     category: 'Mobile · Wellness',
     title: 'AIRA — Health Tracker',
     description:
@@ -67,19 +54,46 @@ const projects = [
     },
   },
   {
-    id: 6,
+    id: 11,
     category: 'AI · Developer Tool',
-    title: 'CodeAtlas',
+    title: 'Codebase RAG',
     description:
-      'AI system that analyzes repositories and generates docs, architecture, and insights.',
-    tech: ['React', 'Node.js', 'FastAPI', 'MySQL', 'OpenAI API'],
-    link: '#',
+      'Understand any GitHub repository instantly using AI ',
+    tech: ['RAG', 'Langchain', 'Streamlit', 'FAISS', 'Python'],
+    link: 'https://codebase-rag-hsfnlpf8igdfjgkxaccos9.streamlit.app/',
     visual: {
-      image: '/comingsoon.png', 
+      image: '/codebase.png', 
       pattern: 'grid',
     },
-    
   },
+  {
+    id: 12,
+    category: 'AI · Visualization',
+    title: 'Neural Network Visualizer',
+    description:
+      'An interactive web application that helps users understand how neural networks learn visually.',
+    tech: ['Neural Networks', 'Streamlit', 'Scikit-learn'],
+    link: 'https://neuralnetworks-gtzjlnrnxxmcfwizebvvgg.streamlit.app/',
+    visual: {
+      image: '/nn.png',
+      pattern: 'stars',
+    },
+    featured: true,
+  },
+  {
+    id: 13,
+    category: 'AI · Analyzer',
+    title: 'Job Skill Gap Analyzer',
+    description:
+      'A full-stack web application that compares a resume with a job description to identify skill gaps and provide actionable insights for improving job readiness.',
+    tech: ['TF-IDF', 'React', 'Flask'],
+    link: 'https://job-skill-gap-analyzer-frontend2.vercel.app/',
+    visual: {
+      image: '/jobskill.png',
+      pattern: 'stars',
+    },
+    featured: true,
+  }
 ];
 
 /* keeps compatibility with your existing pattern logic */

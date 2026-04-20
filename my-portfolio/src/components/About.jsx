@@ -4,8 +4,8 @@ export default function About() {
                         { label: 'Frontend', skills: ['React', 'React Native', 'Tailwind CSS'], }, 
                         { label: 'Backend', skills: ['Node.js', 'Express.js'], }, 
                         { label: 'Databases & ORM', skills: ['MongoDB', 'MySQL', 'Prisma', 'Supabase'], }, 
-                        { label: 'Tools & Platforms', skills: ['Git', 'GitHub', 'Vercel', 'Netlify', 'Render'], }, 
-                        { label: 'AI & Libraries', skills: ['Gemini API', 'NumPy', 'Pandas', 'Scikit-learn', 'Matplotlib'], }, 
+                        { label: 'Tools & Platforms', skills: ['Git', 'GitHub', 'Vercel', 'Netlify', 'Render', 'Streamlit'], }, 
+                        { label: 'AI & Libraries', skills: ['Gemini API', 'NumPy', 'Pandas', 'Scikit-learn', 'Matplotlib', 'RAG', 'NLP' ,'Transformers'], }, 
                         { label: 'Design', skills: ['Figma', 'Canva'], }, { label: 'Auth & Services', skills: ['Clerk'], }, 
                       ];
 
